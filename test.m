@@ -1,6 +1,4 @@
-I = imread('trump.jpg');
-
-I = rgb2gray(I);
+load_img;
 I_FFT = fftshift(fft2(I));
 I_m = log(abs(I_FFT));
 I_ph = (angle(I_FFT));
